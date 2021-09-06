@@ -14,8 +14,9 @@
   </head>
 
   <div class = "container">
-
+    <%= render 'posts/header' %>
   <body>
+    <%= yield %>
     <% if user_signed_in? %>
       <%= link_to 'Logged out', destroy_user_session_path, method: :delete, class: "btn btn-outline-light" %>
      <% else %>
@@ -23,7 +24,6 @@
        <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-outline-light" %>
       <% end %>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
   </body>
   </div>
 </html>

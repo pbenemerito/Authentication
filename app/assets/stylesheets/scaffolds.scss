@@ -21,17 +21,23 @@ a:visited {
 
 a:hover {
   color: #fff;
-  background-color: #000; }
+  background-color: #4B716D; }
+
+tr:hover {
+background-color: #D6EEEE; }
 
 th {
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+font-size: 25px;
+font-family: courier new; }
 
 td {
-  padding: 0 5px 7px; }
+  padding: 0 5px 7px;
+  font-size: 13px; }
 
 div.field,
 div.actions {
-  margin-bottom: 10px; }
+    margin-bottom: 10px; }
 
 #notice {
   color: green; }
@@ -62,4 +68,8 @@ div.actions {
   list-style: square; }
 
 label {
-  display: block; }
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  font-family: sans-serif; }

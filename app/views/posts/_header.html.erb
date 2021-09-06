@@ -1,44 +1,15 @@
-<html>
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-</style>
-</head>
-
-<body>
-
-<ul>
-  <li><a <%= link_to 'Posts', posts_path %></a></li>
-  <li><a href="#news">Sign in</a></li>
-  <li><a href="#contact">Sign up</a></li>
-  <li style="float:right"><a class="active" href="#about">About</a></li>
-</ul>
-
-</body>
-</html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to 'Posts', posts_path, class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to 'New Post', new_post_path, class:"nav-link active" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

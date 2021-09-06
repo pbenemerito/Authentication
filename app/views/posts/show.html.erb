@@ -11,9 +11,9 @@
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @post.user_id %>
+  <strong>Author:</strong>
+  <%= author_name(@post) %>
 </p>
 
-<% if can? :update, @post %><%= link_to 'Edit', edit_post_path(@post) %> | <% end %>
-<%= link_to 'Back', posts_path %>
+<% if can? :update, @post %><%= link_to 'Edit', edit_post_path(@post), class: "btn btn-outline-light" %> | <% end %>
+<%= link_to 'Back', posts_path, class: "btn btn-outline-light" %> |
